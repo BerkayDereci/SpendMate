@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8D8250C62F33A948004D4279 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8250C52F33A948004D4279 /* WidgetKit.framework */; };
+		8D8250C82F33A948004D4279 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8250C72F33A948004D4279 /* SwiftUI.framework */; };
+		8D8250D72F33A949004D4279 /* SpendMateWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8D8250C32F33A948004D4279 /* SpendMateWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D8251052F34A4B0004D4279 /* SpendMateIntentsExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 8D8250FC2F34A4B0004D4279 /* SpendMateIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8D8250562F2EA03F004D4279 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +28,121 @@
 			remoteGlobalIDString = 8D8250452F2EA03D004D4279;
 			remoteInfo = SpendMate;
 		};
+		8D8250D52F33A949004D4279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D82503E2F2EA03D004D4279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8250C22F33A948004D4279;
+			remoteInfo = SpendMateWidgetExtension;
+		};
+		8D8251032F34A4B0004D4279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D82503E2F2EA03D004D4279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8250FB2F34A4B0004D4279;
+			remoteInfo = SpendMateIntentsExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D8250DC2F33A949004D4279 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D8250D72F33A949004D4279 /* SpendMateWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D82510A2F34A4B0004D4279 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				8D8251052F34A4B0004D4279 /* SpendMateIntentsExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8D8250462F2EA03D004D4279 /* SpendMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8250552F2EA03F004D4279 /* SpendMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D82505F2F2EA03F004D4279 /* SpendMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8250C32F33A948004D4279 /* SpendMateWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpendMateWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8250C52F33A948004D4279 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8D8250C72F33A948004D4279 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8D8250DD2F33A983004D4279 /* SpendMateWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpendMateWidgetExtension.entitlements; sourceTree = "<group>"; };
+		8D8250FC2F34A4B0004D4279 /* SpendMateIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = SpendMateIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8D8250D82F33A949004D4279 /* Exceptions for "SpendMateWidget" folder in "SpendMateWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8D8250C22F33A948004D4279 /* SpendMateWidgetExtension */;
+		};
+		8D8250E22F33B33F004D4279 /* Exceptions for "SpendMate" folder in "SpendMateWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Expense.swift,
+				Models/ExpenseCategory.swift,
+				Models/IncomeCategory.swift,
+				Models/TransactionType.swift,
+				Shared/Currency.swift,
+				Shared/WidgetData.swift,
+				Shared/WidgetDataService.swift,
+				SpendMateWidget/LargeWidgetView.swift,
+				SpendMateWidget/MediumWidgetView.swift,
+				SpendMateWidget/SmallWidgetView.swift,
+				SpendMateWidget/SpendMateTimelineProvider.swift,
+				SpendMateWidget/SpendMateWidget.swift,
+				Utils/DateRanges.swift,
+				Utils/Localization.swift,
+			);
+			target = 8D8250C22F33A948004D4279 /* SpendMateWidgetExtension */;
+		};
+		8D8250E42F33CED9004D4279 /* Exceptions for "SpendMate" folder in "SpendMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpendMateWidget/LargeWidgetView.swift,
+				SpendMateWidget/MediumWidgetView.swift,
+				SpendMateWidget/SmallWidgetView.swift,
+				SpendMateWidget/SpendMateTimelineProvider.swift,
+				SpendMateWidget/SpendMateWidget.swift,
+			);
+			target = 8D8250452F2EA03D004D4279 /* SpendMate */;
+		};
+		8D8251092F34A4B0004D4279 /* Exceptions for "SpendMateIntentsExtension" folder in "SpendMateIntentsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8D8250FB2F34A4B0004D4279 /* SpendMateIntentsExtension */;
+		};
+		8D82510C2F34A4F5004D4279 /* Exceptions for "SpendMate" folder in "SpendMateIntentsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpendMateIntents.intentdefinition,
+			);
+			target = 8D8250FB2F34A4B0004D4279 /* SpendMateIntentsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8D8250482F2EA03D004D4279 /* SpendMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8D8250E42F33CED9004D4279 /* Exceptions for "SpendMate" folder in "SpendMate" target */,
+				8D8250E22F33B33F004D4279 /* Exceptions for "SpendMate" folder in "SpendMateWidgetExtension" target */,
+				8D82510C2F34A4F5004D4279 /* Exceptions for "SpendMate" folder in "SpendMateIntentsExtension" target */,
+			);
 			path = SpendMate;
 			sourceTree = "<group>";
 		};
@@ -43,6 +154,22 @@
 		8D8250622F2EA03F004D4279 /* SpendMateUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SpendMateUITests;
+			sourceTree = "<group>";
+		};
+		8D8250C92F33A948004D4279 /* SpendMateWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8D8250D82F33A949004D4279 /* Exceptions for "SpendMateWidget" folder in "SpendMateWidgetExtension" target */,
+			);
+			path = SpendMateWidget;
+			sourceTree = "<group>";
+		};
+		8D8250FD2F34A4B0004D4279 /* SpendMateIntentsExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8D8251092F34A4B0004D4279 /* Exceptions for "SpendMateIntentsExtension" folder in "SpendMateIntentsExtension" target */,
+			);
+			path = SpendMateIntentsExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +196,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D8250C02F33A948004D4279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8250C82F33A948004D4279 /* SwiftUI.framework in Frameworks */,
+				8D8250C62F33A948004D4279 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8250F92F34A4B0004D4279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8D82503D2F2EA03D004D4279 = {
 			isa = PBXGroup;
 			children = (
+				8D8250DD2F33A983004D4279 /* SpendMateWidgetExtension.entitlements */,
 				8D8250482F2EA03D004D4279 /* SpendMate */,
 				8D8250582F2EA03F004D4279 /* SpendMateTests */,
 				8D8250622F2EA03F004D4279 /* SpendMateUITests */,
+				8D8250C92F33A948004D4279 /* SpendMateWidget */,
+				8D8250FD2F34A4B0004D4279 /* SpendMateIntentsExtension */,
+				8D8250C42F33A948004D4279 /* Frameworks */,
 				8D8250472F2EA03D004D4279 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +235,19 @@
 				8D8250462F2EA03D004D4279 /* SpendMate.app */,
 				8D8250552F2EA03F004D4279 /* SpendMateTests.xctest */,
 				8D82505F2F2EA03F004D4279 /* SpendMateUITests.xctest */,
+				8D8250C32F33A948004D4279 /* SpendMateWidgetExtension.appex */,
+				8D8250FC2F34A4B0004D4279 /* SpendMateIntentsExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8D8250C42F33A948004D4279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D8250C52F33A948004D4279 /* WidgetKit.framework */,
+				8D8250C72F33A948004D4279 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +260,14 @@
 				8D8250422F2EA03D004D4279 /* Sources */,
 				8D8250432F2EA03D004D4279 /* Frameworks */,
 				8D8250442F2EA03D004D4279 /* Resources */,
+				8D8250DC2F33A949004D4279 /* Embed Foundation Extensions */,
+				8D82510A2F34A4B0004D4279 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D8250D62F33A949004D4279 /* PBXTargetDependency */,
+				8D8251042F34A4B0004D4279 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8D8250482F2EA03D004D4279 /* SpendMate */,
@@ -163,6 +325,50 @@
 			productReference = 8D82505F2F2EA03F004D4279 /* SpendMateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8D8250C22F33A948004D4279 /* SpendMateWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D8250D92F33A949004D4279 /* Build configuration list for PBXNativeTarget "SpendMateWidgetExtension" */;
+			buildPhases = (
+				8D8250BF2F33A948004D4279 /* Sources */,
+				8D8250C02F33A948004D4279 /* Frameworks */,
+				8D8250C12F33A948004D4279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8D8250C92F33A948004D4279 /* SpendMateWidget */,
+			);
+			name = SpendMateWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SpendMateWidgetExtension;
+			productReference = 8D8250C32F33A948004D4279 /* SpendMateWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8D8250FB2F34A4B0004D4279 /* SpendMateIntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D8251062F34A4B0004D4279 /* Build configuration list for PBXNativeTarget "SpendMateIntentsExtension" */;
+			buildPhases = (
+				8D8250F82F34A4B0004D4279 /* Sources */,
+				8D8250F92F34A4B0004D4279 /* Frameworks */,
+				8D8250FA2F34A4B0004D4279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8D8250FD2F34A4B0004D4279 /* SpendMateIntentsExtension */,
+			);
+			name = SpendMateIntentsExtension;
+			packageProductDependencies = (
+			);
+			productName = SpendMateIntentsExtension;
+			productReference = 8D8250FC2F34A4B0004D4279 /* SpendMateIntentsExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +390,12 @@
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 8D8250452F2EA03D004D4279;
 					};
+					8D8250C22F33A948004D4279 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					8D8250FB2F34A4B0004D4279 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 				};
 			};
 			buildConfigurationList = 8D8250412F2EA03D004D4279 /* Build configuration list for PBXProject "SpendMate" */;
@@ -203,6 +415,8 @@
 				8D8250452F2EA03D004D4279 /* SpendMate */,
 				8D8250542F2EA03F004D4279 /* SpendMateTests */,
 				8D82505E2F2EA03F004D4279 /* SpendMateUITests */,
+				8D8250C22F33A948004D4279 /* SpendMateWidgetExtension */,
+				8D8250FB2F34A4B0004D4279 /* SpendMateIntentsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +437,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8D82505D2F2EA03F004D4279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8250C12F33A948004D4279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8250FA2F34A4B0004D4279 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +481,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D8250BF2F33A948004D4279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8250F82F34A4B0004D4279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +507,16 @@
 			isa = PBXTargetDependency;
 			target = 8D8250452F2EA03D004D4279 /* SpendMate */;
 			targetProxy = 8D8250602F2EA03F004D4279 /* PBXContainerItemProxy */;
+		};
+		8D8250D62F33A949004D4279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D8250C22F33A948004D4279 /* SpendMateWidgetExtension */;
+			targetProxy = 8D8250D52F33A949004D4279 /* PBXContainerItemProxy */;
+		};
+		8D8251042F34A4B0004D4279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D8250FB2F34A4B0004D4279 /* SpendMateIntentsExtension */;
+			targetProxy = 8D8251032F34A4B0004D4279 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,10 +645,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpendMate/SpendMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,10 +679,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpendMate/SpendMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -530,6 +788,126 @@
 			};
 			name = Release;
 		};
+		8D8250DA2F33A949004D4279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpendMateWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendMateWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendMateWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkaydereci.SpendMate.SpendMateWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D8250DB2F33A949004D4279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpendMateWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendMateWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendMateWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkaydereci.SpendMate.SpendMateWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D8251072F34A4B0004D4279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SpendMateIntentsExtension/SpendMateIntentsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendMateIntentsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendMateIntentsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkaydereci.SpendMate.SpendMateIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D8251082F34A4B0004D4279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SpendMateIntentsExtension/SpendMateIntentsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4NB74B5PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendMateIntentsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendMateIntentsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkaydereci.SpendMate.SpendMateIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +943,24 @@
 			buildConfigurations = (
 				8D8250702F2EA03F004D4279 /* Debug */,
 				8D8250712F2EA03F004D4279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D8250D92F33A949004D4279 /* Build configuration list for PBXNativeTarget "SpendMateWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D8250DA2F33A949004D4279 /* Debug */,
+				8D8250DB2F33A949004D4279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D8251062F34A4B0004D4279 /* Build configuration list for PBXNativeTarget "SpendMateIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D8251072F34A4B0004D4279 /* Debug */,
+				8D8251082F34A4B0004D4279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,6 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>com.apple.security.application-groups</key>
-	<array/>
+	<array>
+		<string>group.com.spendmate.shared</string>
+	</array>
+	<!-- Siri Capability - Personal Team için devre dışı -->
+	<!-- Apple Developer Program'a geçince aşağıdaki yorum satırlarını kaldırın ve Xcode'da Siri capability'yi ekleyin -->
+	<!--
+	<key>com.apple.developer.siri</key>
+	<true/>
+	-->
 </dict>
 </plist>
